@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.airsme"
+        minSdkVersion 18
+        targetSdkVersion 26
+        multiDexEnabled true
+        versionCode 10
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        jcenter()
+
+        maven { url "https://jitpack.io" }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'LICENSE.txt'
+        exclude 'asm-license.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+    productFlavors {
+    }
+    configurations {
+        all {
+            exclude group: 'org.json', module: 'json'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support:support-v4:26.+'
+    implementation 'com.android.support:cardview-v7:26.+'
+    implementation 'com.android.support:design:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.+'
+    implementation 'com.android.support:recyclerview-v7:26.+'
+    implementation 'com.android.support:cardview-v7:26.+'
+    implementation 'com.android.support:mediarouter-v7:26.+'
+    implementation 'com.android.support:palette-v7:26.+'
+    implementation 'com.google.firebase:firebase-database:11.8.0'
+    implementation 'com.google.firebase:firebase-storage:11.8.0'
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+    implementation 'com.google.android.gms:play-services-vision:11.8.0'
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'com.google.android.gms:play-services-places:11.8.0'
+    implementation 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.mikhaellopez:circularfillableloaders:1.2.0'
+    implementation 'com.mikhaellopez:circularfillableloaders:1.2.0'
+    implementation 'com.github.arcadefire:nice-spinner:1.3.1'
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+    implementation 'com.mikepenz:google-material-typeface:3.0.1.2.original@aar'
+    implementation 'com.mikepenz:fastadapter-commons:3.2.4@aar'
+    implementation 'com.mikepenz:fontawesome-typeface:5.0.6.0@aar'
+    implementation('com.mikepenz:materialdrawer:6.0.2@aar') {
+        transitive = true
+    }
+    implementation files('libs/io.payworks.mcommerce.android-1.7.6.jar')
+}
+
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

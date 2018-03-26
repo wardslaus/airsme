@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+android:id="@+id/bteninfo_main"
+    android:theme="@style/MyEditText"
+>
+
+<ProgressBar
+    android:id="@+id/login_progress"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:foregroundGravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/timage"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:gravity="bottom"
+            android:baselineAlignBottom="true"
+            />
+
+    </LinearLayout>
+
+<ScrollView
+    android:id="@+id/login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/email_tsignup_form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:textAlignment="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Tender"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:id="@+id/tname"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Town"
+        android:textAlignment="center"
+        android:id="@+id/ttown"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Date"
+        android:textAlignment="center"
+        android:id="@+id/tdate"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Address"
+        android:textAlignment="center"
+        android:id="@+id/taddress"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/btenderinfor_details"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Special notes"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:textColor="#FFFFFF"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btenderinfor_mapbtn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="View Location"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bresponses_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Responses"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btenderinfor_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Done"
+            android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bdeletetender_btn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Delete"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bmarkasdone_btn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mark as done"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
+

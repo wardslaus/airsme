@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".activity.MainActivity">
+
+
+    <item
+        android:id="@+id/messages"
+        android:icon="@android:drawable/ic_dialog_email"
+        app:showAsAction="always"
+        android:title="Messages"/>
+
+    <item
+        android:id="@+id/alltenders"
+        app:showAsAction="never"
+        android:title="All Tenders">
+    </item>
+
+
+    <item
+        android:id="@+id/mytenders"
+        app:showAsAction="never"
+        android:title="My Tenders">
+    </item>
+
+    <item
+        android:id="@+id/account"
+        app:showAsAction="never"
+        android:title="Account">
+    </item>
+
+    <item
+        android:id="@+id/logout"
+        app:showAsAction="never"
+        android:title="Log out">
+    </item>
+    <item
+        android:id="@+id/about"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="About">
+    </item>
+</menu>

@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:paddingBottom="40dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="30dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/connect_checkout_background" >
+
+        <RelativeLayout
+            android:id="@+id/connect_checkout_template_header"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent" >
+
+            <RelativeLayout
+                android:id="@+id/connect_checkout_template_header_icon_border"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/connect_checkout_shadow_icon_layer" >
+
+                <ImageView
+                    android:id="@+id/connect_checkout_template_header_icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/connect_checkout_layout_accessibility_originating_app_icon"
+                    android:scaleType="centerInside" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/connect_checkout_template_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/connect_checkout_template_header_icon_border"
+                android:layout_marginRight="35dp"
+                android:text="@string/connect_checkout_layout_dummy_header_title"
+                android:textAppearance="@style/ConnectCheckout.Text.Subject"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/connect_checkout_template_header_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/connect_checkout_template_header_title"
+                android:layout_marginRight="35dp"
+                android:text="@string/connect_checkout_layout_dummy_header_amount"
+                android:textAppearance="@style/ConnectCheckout.Text.Amount"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/connect_checkout_template_header_vat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/connect_checkout_template_header_amount"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/connect_checkout_layout_dummy_header_vat"
+                android:textAppearance="@style/ConnectCheckout.Text.Tax"
+                android:textColor="#000000" />
+
+            <ImageButton
+                android:id="@+id/connect_checkout_template_header_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/connect_checkout_close"
+                android:contentDescription="@string/connect_checkout_layout_accessibility_cancel_checkout"
+                android:scaleType="centerInside"
+                android:src="@drawable/connect_checkout_close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/connect_checkout_template_footer"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent" >
+
+            <TextView
+                android:id="@+id/connect_checkout_template_footer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="@string/connect_checkout_layout_dummy_footer_text"
+                android:textAppearance="@style/ConnectCheckout.Text.Footer" >
+            </TextView>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/connect_checkout_template_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/connect_checkout_template_footer"
+            android:layout_below="@id/connect_checkout_template_header"
+            android:background="#f0f0f0" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_above="@id/connect_checkout_template_content"
+            android:background="@drawable/connect_checkout_shadow_top_layer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_below="@id/connect_checkout_template_content"
+            android:background="@drawable/connect_checkout_shadow_bottom_layer" />
+    </RelativeLayout>
+
+</LinearLayout>

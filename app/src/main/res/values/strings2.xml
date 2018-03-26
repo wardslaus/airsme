@@ -1,0 +1,69 @@
+<resources>
+
+    <string name="connect_checkout_library_name">connect.checkout</string>
+
+    <!-- accessibility -->
+    <string name="connect_checkout_layout_accessibility_payment_icon">payment method</string>
+    <string name="connect_checkout_layout_accessibility_list_disclosure">select payment method</string>
+    <string name="connect_checkout_layout_accessibility_cancel_checkout">cancel checkout</string>
+    <string name="connect_checkout_layout_accessibility_originating_app_icon">originating app icon</string>
+
+    <!-- content -->
+    <string name="connect_checkout_layout_text_selected_payment_method">Payment method</string>
+    <string name="connect_checkout_layout_text_review_and_confirm">Review and Confirm</string>
+    <string name="connect_checkout_layout_text_pay">Pay Now</string>
+    <string name="connect_checkout_layout_text_first_last_name">First and Last Name</string>
+    <string name="connect_checkout_layout_text_name">Name</string>
+    <string name="connect_checkout_layout_text_cc_number">Credit Card Number</string>
+    <string name="connect_checkout_layout_text_cc_expiry">Expiry Date</string>
+    <string name="connect_checkout_layout_text_cc_cvv">CVV</string>
+    <string name="connect_checkout_layout_text_dd_account_number">Account Number</string>
+    <string name="connect_checkout_layout_text_dd_bank_number">Bank Number</string>
+    <string name="connect_checkout_layout_text_footer_step0">Select your payment method</string>
+    <string name="connect_checkout_layout_text_footer_step1">Insert your payment details</string>
+    <string name="connect_checkout_layout_text_footer_step2">Review your payment details</string>
+    <string name="connect_checkout_layout_text_footer_step3">Executing payment transaction</string>
+    <string name="connect_checkout_layout_text_selected_payment_method_direct_debit">Direct Debit</string>
+    <string name="connect_checkout_layout_text_country">Country</string>
+    <string name="connect_checkout_layout_text_header_vat" formatted="false">(incl. %.2f %s VAT)</string>
+    <string name="connect_checkout_layout_text_header_amount" formatted="false">%.2f %s</string>
+
+    <!-- hints -->
+    <string name="connect_checkout_layout_hint_first_last_name">First and Last Name</string>
+    <string name="connect_checkout_layout_hint_cc_number">Credit Card Number</string>
+    <string name="connect_checkout_layout_hint_cc_expiry_month">MM</string>
+    <string name="connect_checkout_layout_hint_cc_expiry_year">YYYY</string>
+    <string name="connect_checkout_layout_hint_cc_cvv">CVV</string>
+    <string name="connect_checkout_layout_hint_dd_account">Account Number</string>
+    <string name="connect_checkout_layout_hint_dd_bank">Bank Number</string>
+
+    <!-- dummys -->
+    <string name="connect_checkout_layout_dummy_name">John Doe</string>
+    <string name="connect_checkout_layout_dummy_cc_number">*-2323</string>
+    <string name="connect_checkout_layout_dummy_cc_expiry">12/2020</string>
+    <string name="connect_checkout_layout_dummy_cc_cvv">xxx</string>
+    <string name="connect_checkout_layout_dummy_footer_text">Dummy footer</string>
+    <string name="connect_checkout_layout_dummy_header_title">A Title</string>
+    <string name="connect_checkout_layout_dummy_header_amount">119.00 EUR</string>
+    <string name="connect_checkout_layout_dummy_header_vat">(incl. 19.00 EUR VAT)</string>
+    <string name="connect_checkout_layout_dummy_transaction_run">Executing transaction</string>
+    <string name="connect_checkout_layout_dummy_country">DE</string>
+    <string name="connect_checkout_layout_dummy_dd_account_number">x-123</string>
+    <string name="connect_checkout_layout_dummy_dd_bank_number">700 000 00</string>
+
+    <!-- payment -->
+    <string name="connect_checkout_payment_mastercard">Mastercard</string>
+    <string name="connect_checkout_payment_visa">VISA</string>
+    <string name="connect_checkout_payment_amex">American Express</string>
+    <string name="connect_checkout_payment_jcb">JCB</string>
+    <string name="connect_checkout_payment_diners">Diners Club</string>
+    <string name="connect_checkout_payment_direct_debit">Direct Debit</string>
+    <string name="connect_checkout_layout_text_store_account_data">Store my payment details</string>
+    <string name="connect_checkout_layout_text_stored_account_credit_card">Stored credit card</string>
+        <string name="connect_checkout_layout_text_stored_account_direct_debit_card">Stored direct debit card</string>
+        <string name="connect_checkout_layout_text_stored_account_credit_card_description">Credit card</string>
+        <string name="connect_checkout_layout_text_stored_account_direct_debit_card_description">Direct debit card</string>
+        
+    <string name="connect_checkout_layout_text_stored_account_ending_with">ending with</string>
+
+</resources>

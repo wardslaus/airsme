@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.airsme">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".appconfig.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <!-- The API key for Google Maps-based APIs. -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".activity.ChooseSignUp" />
+        <activity android:name=".activity.BIndividual" />
+        <activity android:name=".activity.TermsAndConditions" />
+        <activity android:name=".activity.SuccessMessage" />
+        <activity android:name=".activity.BDashboard" />
+        <activity android:name=".activity.BTenderSpecifics" />
+        <activity
+            android:name=".activity.BProxyRequirements"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.PDashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.BSignup"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.PSignup"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.PQualifications"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.PGetstart"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.PTerms"
+            android:noHistory="true" />
+        <activity
+        android:name=".activity.BGetstart"
+        android:noHistory="true" />
+        <activity
+            android:name=".activity.BTerms"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.PQuali"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.PCong"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.PInfo"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.PBanking"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.PJobBoard"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.PReminder"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.PCantAttend"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.BPending"
+            android:noHistory="true" />
+        <activity android:name=".activity.ChatList" />
+        <activity android:name=".activity.BProxyInfor" />
+        <activity android:name=".activity.BPayProxy" />
+        <activity android:name=".activity.BPushNotification" />
+        <activity android:name=".activity.BTenderInfor" />
+        <activity android:name=".activity.PTenderInfor" />
+        <activity android:name=".activity.BResponses" />
+        <activity android:name=".activity.Message" />
+        <activity android:name=".activity.MapsMarkerActivity" />
+        <activity android:name=".activity.ShoppingActivity" />
+        <activity android:name="com.mobile.connect.checkout.dialog.PWConnectCheckoutActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".LandingActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.CreateAccountActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignupActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".PBSignupActivity"
+            android:noHistory="true" />
+
+    </application>
+
+</manifest>

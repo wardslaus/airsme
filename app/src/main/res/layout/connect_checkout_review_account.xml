@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" >
+
+        <RelativeLayout
+            android:id="@+id/connect_checkout_review_account_iconwrapper"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/connect_checkout_review_account_payment_method_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/connect_checkout_layout_text_selected_payment_method"
+                android:textAppearance="@style/ConnectCheckout.Text" />
+
+            <ImageView
+                android:id="@+id/connect_checkout_review_account_payment_method_icon"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/connect_checkout_layout_accessibility_payment_icon"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/connect_checkout_review_account_name_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/connect_checkout_review_account_iconwrapper"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/connect_checkout_layout_text_name"
+            android:textAppearance="@style/ConnectCheckout.Review" />
+
+        <TextView
+            android:id="@+id/connect_checkout_review_account_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/connect_checkout_review_account_iconwrapper"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/connect_checkout_review_account_name_prefix"
+            android:gravity="right"
+            android:text="@string/connect_checkout_layout_dummy_name"
+            android:textAppearance="@style/ConnectCheckout.Review.Bold" />
+
+        <TextView
+            android:id="@+id/connect_checkout_review_account_ccnumber_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/connect_checkout_review_account_name_prefix"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/connect_checkout_layout_text_stored_account_ending_with"
+            android:textAppearance="@style/ConnectCheckout.Review" />
+
+        <TextView
+            android:id="@+id/connect_checkout_review_account_ccnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/connect_checkout_review_account_name_prefix"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/connect_checkout_review_account_ccnumber_prefix"
+            android:gravity="right"
+            android:text="@string/connect_checkout_layout_dummy_cc_number"
+            android:textAppearance="@style/ConnectCheckout.Review.Bold" />
+
+        <TextView
+            android:id="@+id/connect_checkout_review_account_expiry_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/connect_checkout_review_account_ccnumber_prefix"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/connect_checkout_layout_text_cc_expiry"
+            android:textAppearance="@style/ConnectCheckout.Review"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/connect_checkout_review_account_expiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/connect_checkout_review_account_ccnumber_prefix"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/connect_checkout_review_account_expiry_prefix"
+            android:gravity="right"
+            android:text="@string/connect_checkout_layout_dummy_cc_expiry"
+            android:textAppearance="@style/ConnectCheckout.Review.Bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/connect_checkout_review_account_cvv_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/connect_checkout_review_account_expiry_prefix"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/connect_checkout_layout_text_cc_cvv"
+            android:textAppearance="@style/ConnectCheckout.Review"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/connect_checkout_review_account_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/connect_checkout_review_account_expiry_prefix"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/connect_checkout_review_account_cvv_prefix"
+            android:gravity="right"
+            android:text="@string/connect_checkout_layout_dummy_cc_cvv"
+            android:textAppearance="@style/ConnectCheckout.Review.Bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/connect_checkout_review_account_button"
+            style="@style/ConnectCheckout.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/connect_checkout_review_account_store_account_data"
+            android:text="@string/connect_checkout_layout_text_pay" />
+
+        <CheckBox
+            android:id="@+id/connect_checkout_review_account_store_account_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/connect_checkout_review_account_cvv_prefix"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="0dp"
+            android:text="@string/connect_checkout_layout_text_store_account_data"
+            android:textAppearance="@style/ConnectCheckout.Review.Bold"
+            android:textColor="#202020"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</ScrollView>

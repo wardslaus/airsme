@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/connect_checkout_choose_payment_item_icon"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/connect_checkout_layout_accessibility_payment_icon"
+        android:scaleType="centerInside" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/connect_checkout_choose_payment_item_select"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/connect_checkout_layout_accessibility_list_disclosure"
+        android:scaleType="centerInside"
+        android:src="@drawable/connect_checkout_list_disclosure" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/connect_checkout_choose_payment_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/connect_checkout_choose_payment_item_select"
+        android:textAppearance="@style/ConnectCheckout.Text.ListItem" >
+    </TextView>
+
+</RelativeLayout>

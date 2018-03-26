@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:background="@android:color/transparent" >
+
+        <RelativeLayout
+            android:id="@+id/connect_checkout_insert_dd_payment_data_iconwrapper"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/connect_checkout_insert_dd_payment_data_payment_method_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/connect_checkout_layout_text_selected_payment_method"
+                android:textAppearance="@style/ConnectCheckout.Text" />
+
+            <TextView
+                android:id="@+id/connect_checkout_insert_dd_payment_data_payment_method_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/connect_checkout_layout_text_selected_payment_method_direct_debit"
+                android:textAppearance="@style/ConnectCheckout.Text" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/connect_checkout_insert_dd_payment_data_name"
+            style="@style/ConnectCheckout.Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/connect_checkout_insert_dd_payment_data_iconwrapper"
+            android:hint="@string/connect_checkout_layout_hint_first_last_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:nextFocusDown="@+id/connect_checkout_insert_dd_payment_data_country" />
+
+        <RelativeLayout
+            android:id="@+id/connect_checkout_insert_dd_payment_data_contrywrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connect_checkout_insert_dd_payment_data_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/connect_checkout_insert_dd_payment_data_country_prefix"
+                style="@style/ConnectCheckout.InputHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/connect_checkout_layout_text_country" />
+
+            <Spinner
+                android:id="@+id/connect_checkout_insert_dd_payment_data_country_spinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="0dp"
+                android:textColor="#202020"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/connect_checkout_insert_dd_payment_data_country_fixed"
+                style="@style/ConnectCheckout.InputHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="0dp"
+                android:text="@string/connect_checkout_layout_dummy_country" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/connect_checkout_insert_dd_payment_data_account"
+            style="@style/ConnectCheckout.Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connect_checkout_insert_dd_payment_data_contrywrapper"
+            android:hint="@string/connect_checkout_layout_hint_dd_account"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned"
+            android:maxLength="16"
+            android:nextFocusDown="@+id/connect_checkout_insert_dd_payment_data_bank" />
+
+        <EditText
+            android:id="@+id/connect_checkout_insert_dd_payment_data_bank"
+            style="@style/ConnectCheckout.Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connect_checkout_insert_dd_payment_data_account"
+            android:hint="@string/connect_checkout_layout_hint_dd_bank"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned"
+            android:maxLength="16" />
+
+        <Button
+            android:id="@+id/connect_checkout_insert_dd_payment_data_button"
+            style="@style/ConnectCheckout.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/connect_checkout_insert_dd_payment_data_bank"
+            
+            android:text="@string/connect_checkout_layout_text_review_and_confirm" />
+    </RelativeLayout>
+
+</ScrollView>
